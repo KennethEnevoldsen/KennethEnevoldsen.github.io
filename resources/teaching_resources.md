@@ -22,16 +22,26 @@ Each item will contain a rating from 1-10, with 1 being *"this material is belie
 ## Transformer Models
 - (5-7) Brief introduction to transformer models ([ref](https://www.youtube.com/watch?v=TQQlZhbC5ps&ab_channel=CodeEmporium))
 
+
 ---
 
-# Youtubers
+# Blog Posts
+
+## Transformers
+A blogpost explaining the transformer: The Illustrated Transformer ([ref](http://jalammar.github.io/illustrated-transformer/))
+
+## Attention in NLP
+A blogpost explaing Attention in Machine Translation ([ref](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/))
+
+---
+
+# Personalities
 
 ## Mathematics
 - (10) 3Blue1Brown by Grant Sanderson ([ref](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw))
 
 ## Machine Learning and statistics
 - (8-9) StatQuest by Josh Starmer ([ref](https://www.youtube.com/user/joshstarmer))
-- 
 
 ---
 
