@@ -22,16 +22,23 @@ Each item will contain a rating from 1-10, with 1 being *"this material is belie
 ## Transformer Models
 - (5-7) Brief introduction to transformer models ([ref](https://www.youtube.com/watch?v=TQQlZhbC5ps&ab_channel=CodeEmporium))
 
-
 ---
 
 # Blog Posts
 
+
 ## Transformers
 A blogpost explaining the transformer: The Illustrated Transformer ([ref](http://jalammar.github.io/illustrated-transformer/))
+- (7-9) The annotated transformer ([ref](http://nlp.seas.harvard.edu/2018/04/03/attention.html))
+- (8-9) Transformers are GNN  ([ref](https://graphdeeplearning.github.io/post/transformers-are-gnns/?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter))
 
 ## Attention in NLP
 A blogpost explaing Attention in Machine Translation ([ref](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/))
+
+---
+# Courses or Course Material
+
+- (8-9): NLP Course ([ref](https://lena-voita.github.io/nlp_course.html)) and associated github ([ref](https://github.com/yandexdataschool/nlp_course))
 
 ---
 
