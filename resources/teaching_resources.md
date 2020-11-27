@@ -34,11 +34,17 @@ A blogpost explaining the transformer: The Illustrated Transformer ([ref](http:/
 
 ## Attention in NLP
 A blogpost explaing Attention in Machine Translation ([ref](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/))
+- The annotated encoder decoder with Bahdanau attention. Similar to the annotated transformer but with the paper introducing attention by Bahdanau ([ref](https://bastings.github.io/annotated_encoder_decoder/))
+
+##
+a list of pytorch resources ([ref](https://github.com/ritchieng/the-incredible-pytorch))
 
 ---
 # Courses or Course Material
 
 - (8-9): NLP Course ([ref](https://lena-voita.github.io/nlp_course.html)) and associated github ([ref](https://github.com/yandexdataschool/nlp_course))
+- (unrated) Deep learning ([ref](https://atcold.github.io/pytorch-Deep-Learning/))
+- Course in general ML by fast.ai ([ref](https://course.fast.ai))
 
 ---
 
