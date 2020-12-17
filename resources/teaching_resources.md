@@ -21,10 +21,18 @@ Each item will contain a rating from 1-10, with 1 being *"this material is belie
 
 ## Transformer Models
 - (5-7) Brief introduction to transformer models ([ref](https://www.youtube.com/watch?v=TQQlZhbC5ps&ab_channel=CodeEmporium))
+- Great video according to ross https://www.youtube.com/watch?v=4Bdc55j80l8
+- 
 
 ---
 
 # Blog Posts
+Wonderful blog by OpenAI engineer on NN and ML: https://lilianweng.github.io/lil-log/
+
+
+# Data Science
+- a look up resource for data science concepts: https://polakowo.io/datadocs/docs/machine-learning/linear-models
+
 
 
 ## Transformers
@@ -58,7 +66,7 @@ a list of pytorch resources ([ref](https://github.com/ritchieng/the-incredible-p
 
 ---
 
-# Final Comments
-This section simply contains comments on the above ratings. 
+## Books
+a book on data vizualization:
+https://handsondataviz.org/audience-overview.html
 
-It generally saddens me to give anything produced by Grant Sanderson less than top marks, but I do believe his videos on neural networks could be better given the outstanding quality of his work.
