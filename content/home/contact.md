@@ -9,8 +9,6 @@ headless: true
 # Order that this section appears on the page.
 weight: 130
 
-title: Contact
-subtitle:
 
 content:
   # Automatically link email and phone or display as text?
@@ -18,9 +16,9 @@ content:
   
   # Email form provider
   form:
-    provider: formspree
+    provider: netlify
     formspree:
-      id: test
+      id:
     netlify:
       # Enable CAPTCHA challenge to reduce spam?
       captcha: true
