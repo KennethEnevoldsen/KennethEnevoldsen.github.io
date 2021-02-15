@@ -4,7 +4,11 @@ author: admin
 date: '2021-02-15'
 slug: an-introduction-to-likelihood-estimation
 categories: []
-tags: []
+tags:
+  - tutorial
+  - likelihood estimation
+  - annotated paper
+  - bayesian
 subtitle: ''
 summary: ''
 authors: []
@@ -16,6 +20,12 @@ image:
   preview_only: no
 projects: []
 bibliography: ref.bib
+links:
+- icon: github
+  icon_pack: fab
+  name: Code
+  url: "https://github.com/KennethEnevoldsen/KennethEnevoldsen.github.io/tree/master/content/post/2021-02-15-an-introduction-to-likelihood-estimation"
+
 ---
 
 
