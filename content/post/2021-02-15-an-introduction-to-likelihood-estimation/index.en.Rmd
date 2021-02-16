@@ -1,5 +1,5 @@
 ---
-title: An Introduction to Likelihood Estimation
+title: An Annotated Introduction to Likelihood Estimation
 author: admin
 date: '2021-02-15'
 slug: an-introduction-to-likelihood-estimation
@@ -25,6 +25,8 @@ links:
   icon_pack: fab
   name: Code
   url: "https://github.com/KennethEnevoldsen/KennethEnevoldsen.github.io/tree/master/content/post/2021-02-15-an-introduction-to-likelihood-estimation"
+- name: Annotated Paper
+  url: "https://journals.sagepub.com/doi/full/10.1177/2515245917744314#"
 
 ---
 
