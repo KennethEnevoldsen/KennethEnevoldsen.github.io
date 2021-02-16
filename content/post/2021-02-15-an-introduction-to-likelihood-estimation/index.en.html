@@ -25,6 +25,8 @@ links:
   icon_pack: fab
   name: Code
   url: "https://github.com/KennethEnevoldsen/KennethEnevoldsen.github.io/tree/master/content/post/2021-02-15-an-introduction-to-likelihood-estimation"
+- name: Annotated Paper
+  url: "https://journals.sagepub.com/doi/full/10.1177/2515245917744314#"
 
 ---
 
@@ -340,7 +342,7 @@ p2_samples = sample(p, size=number_of_samples, replace=T, prob=p2_posterior)
 
 # what proportion of p1 is bigger than p2? 
 sum(p1_samples &gt; p2_samples)/length(p2_samples)</code></pre>
-<pre><code>## [1] 0.67382</code></pre>
+<pre><code>## [1] 0.67742</code></pre>
 <p>This gives us the probability that product 1 have a higher probability of receiving a better score (indicating it is a better product) than product 2. So if you play your odds right you should go with 1, but what happens if you change your initial assumptions? What if I used a flat prior? What if I used maximum likelihood to estimate this instead? These are good questions, which is why it is now an exercise for you:</p>
 <p>Exercise:
 - 6) What would have happened if you used the maximum likelihood instead. What
