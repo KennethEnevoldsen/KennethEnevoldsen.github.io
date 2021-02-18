@@ -11,10 +11,6 @@ weight: 40
 title: Publications
 subtitle: ''
 
-background:
-  color: 'navy'
-  # Text color (true=light or false=dark).
-  text_color_light: true
 
 content:
   # Page type to display. E.g. post, talk, publication...
