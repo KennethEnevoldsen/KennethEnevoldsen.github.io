@@ -1,6 +1,5 @@
 ---
 bio: My research interests is in multimodal representation learning with application in decision support systems in Psychiatry and in the Covid-19 response.
-  matter.
 education:
   courses:
   - course: PhD in Multimodal Representation Learning
