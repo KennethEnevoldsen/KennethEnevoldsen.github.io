@@ -5,7 +5,9 @@ date: '2021-02-25'
 slug: new-fast-and-efficient-state-of-the-art-in-danish-nlp
 categories: []
 tags:
-  - NLP
+- NLP
+- Danish NLP
+- Low-resource NLP
 subtitle: 'An acknowledgement of the efficiency of open-source'
 summary: 'The short story of how I achieved state-of-the-art on all Danish NLP tasks Using SpaCy v3 and a series of other open-source tools'
 authors: []
@@ -15,12 +17,14 @@ image:
   caption: ''
   focal_point: 'center'
   preview_only: no
-projects: []
+projects:
+  - dacy
 links:
 - icon: github
   icon_pack: fab
   name: Code
-  url: "https://github.com/KennethEnevoldsen/missing"
+  url: "https://github.com/KennethEnevoldsen/DaCy"
+
 - icon: download
   icon_pack: fas
   name: Download
@@ -171,7 +175,7 @@ perf = tribble(
   "Stanza",         97.75,     NA,         NA,          NA,          NA,          86.83,   84.19,
   "Polyglot",       NA,        64.95,      39.3,        78.74,       64.18,       NA,      NA,
   "NERDA (mBERT)",  NA,        80.75,      65.73,       92.66,       80.66,       NA,      NA,
-  "Dacy mediuem (DaBERT v2)",   97.93,     83.09,      67.35,       89.62,                78.47,        87.88,   85.34,
+  "Dacy medium (DaBERT v2)",   97.93,     83.09,      67.35,       89.62,                78.47,        87.88,   85.34,
   "DaCy large (XLM Roberta)",   98.39,     83.90,      77.82,       95.53,       85.20,        90.59,   88.34
 )
 
@@ -186,7 +190,7 @@ perf %>%
       align=c("l", rep("c", length(columns)))) %>%
   add_header_above(c(" " = 1, "POS" = 1, "NER"= 4, "Dependency Parsing" = 2)) %>% 
   highlight_highest(., perf, columns = columns, underline_second = T) %>% 
-  kable_material(c("hover", "condensed")) %>% 
+  kable_material(c("hover", "condensed")) %>%
     row_spec(7:8, bold = F, italic = F, background="beige")
 ```
 
@@ -198,7 +202,7 @@ What is next? Well I will reach out to DaNLP and SpaCy to have both versions of 
 If you want to reproduce the models feel free examine the Github. It used the new SpaCy projects so everything should be completely reproducible. Note that a specific branch is made for the Roberta model.
 
 ### Acknowledgements
-This is really a whole blog on acknowledgment of great open source software and contributors to it but just to make it clear. This wouldn't have been possible with the work by the SpaCy team which developed an integrated the software. Huggingface for developing Transformers and making model sharing convenient. BotXO for training and sharing the Danish BERT model and Malte Bertelsen for making it easily available. DaNLP have made it extremely easy to get access to Danish resources to train on and even supplied some of the tagged data themselves and does a great job of actually developing these datasets. Naturally the biggest acknowledgments should be given to the SpaCy team.
+This is really a whole blog on acknowledgment of great open source software and contributors to it but just to make it clear. This wouldn't have been possible with the work by the SpaCy team which developed an integrated the software. Huggingface for developing Transformers and making model sharing convenient. BotXO for training and sharing the Danish BERT model and Malte Bertelsen for making it easily available. DaNLP have made it extremely easy to get access to Danish resources to train on and even supplied some of the tagged data themselves and does a great job of actually developing these datasets.
 
 <!-- begin wwww.htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
