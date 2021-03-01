@@ -28,8 +28,8 @@ links:
 - icon: download
   icon_pack: fas
   name: Download
-  url: "link missing"
-
+  url: "https://filesender.deic.dk/simplesaml/module.php/core/as_login.php?AuthId=default-sp&ReturnTo=https%3A%2F%2Ffilesender.deic.dk%2Findex.php%3Fs%3Dtransfers%23transfer_35131"
+ 
 ---
 
 
