@@ -27,7 +27,6 @@ This is blog post includes the original twitter thread introducing tomsup to the
 ```{r, echo = F}
 library(tweetrmd) 
 
-?include_tweet
 include_tweet("https://twitter.com/KCEnevoldsen/status/1370355188624723971", hide_media = FALSE)
 include_tweet("https://twitter.com/WaadePeter/status/1370355722555432967?s=20", hide_media = FALSE)
 include_tweet("https://twitter.com/KCEnevoldsen/status/1370355900490350601?s=20", hide_media = FALSE)
