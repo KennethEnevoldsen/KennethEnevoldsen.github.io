@@ -14,7 +14,7 @@ subtitle: ''
 summary: ''
 authors: []
 lastmod: '2021-03-12T14:52:04+01:00'
-featured: no
+featured: yes
 image:
   caption: ''
   focal_point: ''
@@ -25,7 +25,6 @@ projects: []
 
 ```{r, echo = F}
 library(tweetrmd) 
-include_tweet("https://twitter.com/KCEnevoldsen/status/1370355188624723971")
 include_tweet("https://twitter.com/KCEnevoldsen/status/1370355188624723971")
 ```
 
