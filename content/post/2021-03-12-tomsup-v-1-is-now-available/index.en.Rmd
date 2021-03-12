@@ -1,0 +1,34 @@
+---
+title: Tomsup v. 1 is now available!
+author: admin
+date: '2021-03-12'
+slug: tomsup-v-1-is-now-available
+categories: []
+tags:
+  - Agent-Based Simulation
+  - Game Theory
+  - bayesian
+  - Variational Bayesian Inference
+  - Theory of Mind
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-12T14:52:04+01:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+```{r, echo = F}
+library(tweetrmd) 
+include_tweet("https://twitter.com/KCEnevoldsen/status/1370355188624723971")
+include_tweet("https://twitter.com/KCEnevoldsen/status/1370355188624723971")
+```
+
+
+
+
