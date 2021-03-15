@@ -1,5 +1,5 @@
 ---
-title: ml_bias
+title: Slides: Machine Bias 
 author: admin
 date: '2021-03-15'
 slug: ml-bias
