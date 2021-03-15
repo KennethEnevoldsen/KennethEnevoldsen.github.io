@@ -1,5 +1,5 @@
 ---
-title: Slides: Introduction to DaCy and SpaCy
+title: "Slides: Introduction to DaCy and SpaCy"
 author: admin
 date: '2021-03-16'
 slug: intro-dacy
@@ -81,3 +81,5 @@ by Kenneth Enevoldsen | 2021-05-16
 
 ## Example
 Using DaCy and SpaCy
+
+---

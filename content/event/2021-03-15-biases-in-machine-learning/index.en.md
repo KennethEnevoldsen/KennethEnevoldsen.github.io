@@ -1,5 +1,5 @@
 ---
-title: Biases in Machine Learning
+title: "Biases in Machine Learning"
 author: admin
 date: '2021-03-15'
 summary: A Talk on biases in Machine learning and how it is impossible to fullfill all fairness principles.
@@ -25,4 +25,4 @@ slides: 2021-03-15-ml-bias
 ---
 
 # Summary
-A Talk on biases in Machine learning and how it is impossible to fullfill all fairness principles.
+A Talk on biases in Machine learning and how it is impossible to fulfill all fairness principles.
