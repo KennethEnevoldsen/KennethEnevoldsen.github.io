@@ -119,4 +119,7 @@ One of the following must hold:
 
 ---
 
+# References
+- Kleinberg, J., Mullainathan, S., & Raghavan, M. (2016). Inherent Trade-Offs in the Fair Determination of Risk Scores. ArXiv:1609.05807 [Cs, Stat]. http://arxiv.org/abs/1609.05807
+- Mattu, J. A., Jeff Larson,Lauren Kirchner,Surya. (2016). Machine Bias. ProPublica. Retrieved March 14, 2021, from https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
 

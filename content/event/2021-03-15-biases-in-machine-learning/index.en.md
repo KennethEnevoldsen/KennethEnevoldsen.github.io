@@ -23,3 +23,6 @@ projects: []
 
 slides: 2021-03-15-ml-bias
 ---
+
+# Summary
+A Talk on biases in Machine learning and how it is impossible to fullfill all fairness principles.
