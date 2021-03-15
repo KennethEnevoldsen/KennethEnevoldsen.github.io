@@ -41,5 +41,3 @@ include_tweet("https://twitter.com/KCEnevoldsen/status/1370361559898329090", hid
 
 
 
-
-
