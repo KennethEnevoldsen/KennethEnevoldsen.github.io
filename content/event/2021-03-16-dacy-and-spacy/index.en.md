@@ -22,5 +22,6 @@ projects:
 slides: 2021-03-15-intro-dacy
 ---
 
+
 # Summary
 A presentation of DaCy, an Efficient Danish State-of-the-Art NLP pipeline build on SpaCy, at Extra Bladet, one of the biggest Danish news outlet. The talk include an introduction to SpaCy and why it is relevant and an introduction to application of DaCy to Danish Speeches. 
