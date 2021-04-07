@@ -34,6 +34,7 @@ This post contains resources which I believe to be the best at teaching what the
 3. [Data Science](#data-science)
 4. [Courses or Course Material](#courses-or-course-material)
 4. [Personalities](#personalities)
+4. [Summary Material](#summary-material)
 
 
 # Videos
@@ -120,3 +121,7 @@ This post contains resources which I believe to be the best at teaching what the
 
 ### PyTorch
 - A list of pytorch resources ([ref](https://github.com/ritchieng/the-incredible-pytorch))
+
+# Summary Material
+---
+- Spectra Pub, a Machine Learning Review Paper Competition. Full of great review papers of entire fields. ([ref](https://spectra.pub))

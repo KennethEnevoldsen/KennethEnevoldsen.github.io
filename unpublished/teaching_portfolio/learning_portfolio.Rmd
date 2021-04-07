@@ -1,0 +1,77 @@
+---
+title: "Teaching Portfolio"
+author: "K. Enevoldsen"
+date: "3/16/2021"
+output:
+  pdf_document:
+    latex_engine: xelatex
+---
+
+# Teaching Philosophy
+<!-- General description of your teaching approach / philosophy. For inspiration, look at the reflection questions to kick-start your teaching philosophy in the slides for Day 2, at your posts in your Learning Portfolio, and at the mini TPs below. -->
+
+As a PhD Fellow with experience in Cognitive Science and computational modelling, I am a strong proponent of creating and good learning environment with good incentive structures and which provide quick and useful feedback, both for the teacher and the student. High-quality feedback can be facilitated by providing channels for the student to give ongoing feedback anonymously. Additionally, I believe that specifically in my field the use of automated feedback tools such as GitHub classrooms, allows me to bootstrap feedback, hereby allowing for high-quality and quick feedback.
+
+I believe the use of active and social learning is important to facilitate proper understanding of the concept as well as teaching not only the material but soft-skills such as collaboration and how to participate in meaningful discussions. Thus an essential part of my teaching is practical, collaborative, and project-oriented.
+
+
+# Overview of Teaching Experience
+<!-- % In table form like the one on AU's page on the teaching portfolio showing course title, level, place, hours, subject, no. of students, form, credits etc. (see examples below) -->
+
+Table 1 gives an overview of my past teaching experience in Higher education.
+
+```{r, echo=F, message=F}
+library(tidyverse)
+library(kableExtra)
+
+expe = tribble(
+  ~Course,             ~Level,     ~Institution,                ~Subject, ~Hours, ~"No. of Student", ~"Form", ~Year, ~ECTS,
+  "Cognitive Science", "Bachelor", "Aarhus University", "Experimental Methods I", 50, 60, "Exercises", 2018, 10,
+  "Cognitive Science", "Bachelor", "Aarhus University", "Experimental Methods 3", 50, 60,  "Exercises, Supervisions", 2019, 10,
+  "Cognitive Science", "Bachelor", "Aarhus University", "Computational Modelling", 50, 60,  "Exercises, Supervisions", 2020, 10,
+  "Cognitive Science", "Bachelor", "Aarhus University", "Natural Language Processing", 50, 60,  "Exercises, Supervisions", 2020, 10)
+
+expe %>% 
+  kbl(booktabs = T, caption="An overview of teaching experiences. Do not that hours does not include teaching preperations.") %>%
+  kable_styling(latex_options = c("striped", "scale_down"), font_size = 7) 
+
+```
+
+# Example of development work in teaching practices
+
+## Natural Language Processing
+
+### Brief Description of the Course
+<!-- Briefly describe the course and list the learning outcomes. (Make sure the learning outcomes are formulated as active verbs). -->
+This course introduces students to advanced statistical methods used in the processing of natural language. The course expands upon the student background knowledge in statistical programming and statistics and how these skills can be applied to speech and naturally occurring language. The course teaches models for language understanding and relate these to human cognition and teaches how to build and understand intelligent systems foundational for digital assistants and chatbots.
+
+
+### Learning Goals
+After the course the student should be able to:
+
+  - **contrast**  natural language processing methods in terms of their strengths and weaknesses
+  - **explain** how formal analysis of natural language can provide insights into human cognition and behaviour
+  - **discuss** ethical issues connected to natural language processing software
+  - **critically reflect on and discuss** theoretical and empirical implications of using natural language processing techniques
+  - **identify** relevant data sources for specific research and applied questions
+  - **correctly choose and apply** tools for analysing natural language data.
+
+
+### Summative Assesment
+The exam is an individual oral exam based on a written synopsis.
+
+## Learning Activity: Teaching based on the Students
+<!-- Describe a learning activity and explain which learning outcome is achieved. (Use part of what you wrote in the alignment activity) -->
+
+When starting the MSc programme in Cognitive Science, students start with a wide variety of background and to fill in gaps in the expected skill-level an initial workshop is proposed. Before the workshop, the student is asked to fill in an interactive questionnaire, which tests their knowledge in a variety of fields such as model interpretation, programming in python and R, and Mathematics especially probability and linear algebra. The intended goal of this workshop is to allow students to participate meaningfully in the following courses, most notably natural language processing. 
+
+Following this questionnaire, a short report is produced on the overall skill-level of the students. This is both intended for the students as well as the teacher. It is assumed that the setup is so that this report can be automatically generated. Please note that meaningful questions can be automated given the topic at hand. 
+
+Using this report the teacher or teachers plans out the workshop focusing on the weaknesses revealed by the report. If multiple teachers are available this workshop can be planned such that students can choose (or be assigned to) workshops that will address the lack of knowledge. If there are not multiple teachers major weaknesses can be addressed using a mixture of presentation and exercises, while students with minor weaknesses can follow guided tutorials written by the teacher (e.g. Jupyter Notebooks) or online teaching material such as videos or articles. The teaching session should start with a short presentation of the student's current skill set and what this session seeks to address.
+
+Students with all the required skills can either be given an independent project or, assuming the workshop is optional, simply forgo it.
+
+
+## Assesment
+<!-- Describe how you would assess students' learning of this activity. Briefly explain how this connects to the summative assessment for the course.  -->
+Following the workshop, the student is intended to hand in a programming assignment which tests out all the skills in question. For instance an assignment in implementing an simple neural network and/or a Naive Bayes classifier. Completing this workshop allows the student to meaningfully participate in the course and is foundational for the code-base underlying the written synopsis, which is handed in as supplementary material.

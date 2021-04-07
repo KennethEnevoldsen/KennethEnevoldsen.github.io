@@ -47,6 +47,18 @@ by Kenneth Enevoldsen | 2021-05-16
 
 ---
 
+# Who am I?
+
+- PhD Student
+  - Aarhus Psychiatry
+  - Genetics
+  - Detecting spread of misinformation and fake news
+
+- JHN Processor
+- Teaching NLP, programming and stats
+
+---
+
 ## What is SpaCy
 
 - Production-friendly NLP tools
