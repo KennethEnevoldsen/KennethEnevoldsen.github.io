@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Variational Bayesian Inference | Kenneth Enevoldsen</title>
+    <link>/tag/variational-bayesian-inference/</link>
+      <atom:link href="/tag/variational-bayesian-inference/index.xml" rel="self" type="application/rss+xml" />
+    <description>Variational Bayesian Inference</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 12 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu4ba724bf37c553eb25cabdede402d374_23163_512x512_fill_lanczos_center_2.png</url>
+      <title>Variational Bayesian Inference</title>
+      <link>/tag/variational-bayesian-inference/</link>
+    </image>
+    
+    <item>
+      <title>Introduction to Tomsup 👍</title>
+      <link>/post/tomsup-v-1-is-now-available/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>/post/tomsup-v-1-is-now-available/</guid>
+      <description>
+&lt;script src=&#34;/post/tomsup-v-1-is-now-available/index.en_files/twitter-widget/widgets.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This is blog post includes the original twitter thread introducing tomsup to the twitter.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-width=&#34;550&#34; data-lang=&#34;en&#34; data-dnt=&#34;true&#34; data-theme=&#34;light&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Have you always wanted to understand how models of Theory of Mind (ToM) could actually work during social interactions? And have you always wanted to explore how people would adapt to agents employing different levels of ToM? Read further! 1/🧵 &lt;a href=&#34;https://t.co/cqQIkWi7h2&#34;&gt;pic.twitter.com/cqQIkWi7h2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kenneth Enevoldsen (@KCEnevoldsen) &lt;a href=&#34;https://twitter.com/KCEnevoldsen/status/1370355188624723971?ref_src=twsrc%5Etfw&#34;&gt;March 12, 2021&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-width=&#34;550&#34; data-lang=&#34;en&#34; data-dnt=&#34;true&#34; data-theme=&#34;light&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;In our recent pre-print (&lt;a href=&#34;https://t.co/MoFwJHlclx&#34;&gt;https://t.co/MoFwJHlclx&lt;/a&gt;), we (&lt;a href=&#34;https://twitter.com/KCEnevoldsen?ref_src=twsrc%5Etfw&#34;&gt;@KCEnevoldsen&lt;/a&gt; , &lt;a href=&#34;https://twitter.com/WaadePeter?ref_src=twsrc%5Etfw&#34;&gt;@WaadePeter&lt;/a&gt;, Arndis Simonsen and &lt;a href=&#34;https://twitter.com/fusaroli?ref_src=twsrc%5Etfw&#34;&gt;@fusaroli&lt;/a&gt;) introduce an easy-to-use python package tomsup 👍 (&lt;a href=&#34;https://t.co/HGpFZaLd0V&#34;&gt;https://t.co/HGpFZaLd0V&lt;/a&gt;). 2/🧵&lt;/p&gt;&amp;mdash; Peter Thestrup Waade (@WaadePeter) &lt;a href=&#34;https://twitter.com/WaadePeter/status/1370355722555432967?ref_src=twsrc%5Etfw&#34;&gt;March 12, 2021&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-width=&#34;550&#34; data-lang=&#34;en&#34; data-dnt=&#34;true&#34; data-theme=&#34;light&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Tomsup can simulate agents with a recursive theory of mind (k-ToM models) both in agent-based models (to explore the implications of the models) and to dynamically generate experimental stimuli (agents playing against experimental participants). 3/🧵&lt;/p&gt;&amp;mdash; Kenneth Enevoldsen (@KCEnevoldsen) &lt;a href=&#34;https://twitter.com/KCEnevoldsen/status/1370355900490350601?ref_src=twsrc%5Etfw&#34;&gt;March 12, 2021&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-width=&#34;550&#34; data-lang=&#34;en&#34; data-dnt=&#34;true&#34; data-theme=&#34;light&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;k-ToM agents simulate their opponent’s perspective in order to infer their beliefs about themselves. They do this recursively, their sophistication level k denoting how many recursions to do - the opponent’s level must also be inferred. 4/🧵 &lt;a href=&#34;https://t.co/zs3H7Rmzbo&#34;&gt;pic.twitter.com/zs3H7Rmzbo&lt;/a&gt;&lt;/p&gt;&amp;mdash; Peter Thestrup Waade (@WaadePeter) &lt;a href=&#34;https://twitter.com/WaadePeter/status/1370357551792017408?ref_src=twsrc%5Etfw&#34;&gt;March 12, 2021&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-width=&#34;550&#34; data-lang=&#34;en&#34; data-dnt=&#34;true&#34; data-theme=&#34;light&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;k-ToM models have proven useful to assess theory of mind in human and non-human primates (&lt;a href=&#34;https://t.co/fFFJLMfSc4&#34;&gt;https://t.co/fFFJLMfSc4&lt;/a&gt;), atypicalities of ToM in autism (&lt;a href=&#34;https://t.co/IASQS4Ldvd&#34;&gt;https://t.co/IASQS4Ldvd&lt;/a&gt;), and to figure out how many levels of recursion are useful in practice (&lt;a href=&#34;https://t.co/ecHlnOxlf7&#34;&gt;https://t.co/ecHlnOxlf7&lt;/a&gt;). 5/🧵&lt;/p&gt;&amp;mdash; Kenneth Enevoldsen (@KCEnevoldsen) &lt;a href=&#34;https://twitter.com/KCEnevoldsen/status/1370358091703840774?ref_src=twsrc%5Etfw&#34;&gt;March 12, 2021&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-width=&#34;550&#34; data-lang=&#34;en&#34; data-dnt=&#34;true&#34; data-theme=&#34;light&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;k-ToM agents use a variational Bayesian Laplace approximation to estimate their opponents’ model parameters. With recursive agents, the model gets a bit complicated – here’s the DAG for the full model with k&amp;gt;2 &lt;a href=&#34;https://t.co/aWF1QeBxIk&#34;&gt;pic.twitter.com/aWF1QeBxIk&lt;/a&gt;&lt;/p&gt;&amp;mdash; Peter Thestrup Waade (@WaadePeter) &lt;a href=&#34;https://twitter.com/WaadePeter/status/1370359037989097481?ref_src=twsrc%5Etfw&#34;&gt;March 12, 2021&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-width=&#34;550&#34; data-lang=&#34;en&#34; data-dnt=&#34;true&#34; data-theme=&#34;light&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Using tomsup we can easily show that k-ToM agents beat non-ToM models (e.g. reinforcement learning and heuristic models). This is because k-ToM agents focus on predicting the others’ choices and then trick them! To beat a k-ToM agent you need a higher level of recursion. 7/🧵 &lt;a href=&#34;https://t.co/wgpwYVWMH5&#34;&gt;pic.twitter.com/wgpwYVWMH5&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kenneth Enevoldsen (@KCEnevoldsen) &lt;a href=&#34;https://twitter.com/KCEnevoldsen/status/1370360290261532682?ref_src=twsrc%5Etfw&#34;&gt;March 12, 2021&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-width=&#34;550&#34; data-lang=&#34;en&#34; data-dnt=&#34;true&#34; data-theme=&#34;light&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;You can find a tutorial to run these simulations here: &lt;a href=&#34;https://t.co/1XHoOjlPrS&#34;&gt;https://t.co/1XHoOjlPrS&lt;/a&gt;. You can also assess how your participants will fare against different models, by dynamically simulating the agents during an experiment. See a tutorial here: &lt;a href=&#34;https://t.co/xqn8qn19wJ&#34;&gt;https://t.co/xqn8qn19wJ&lt;/a&gt; 8/🧵&lt;/p&gt;&amp;mdash; Peter Thestrup Waade (@WaadePeter) &lt;a href=&#34;https://twitter.com/WaadePeter/status/1370360579320393732?ref_src=twsrc%5Etfw&#34;&gt;March 12, 2021&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-width=&#34;550&#34; data-lang=&#34;en&#34; data-dnt=&#34;true&#34; data-theme=&#34;light&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;k-ToM models were formalized and developed by &lt;a href=&#34;https://twitter.com/MarieDevaine?ref_src=twsrc%5Etfw&#34;&gt;@MarieDevaine&lt;/a&gt;  and Daunizeau (2017)&lt;br&gt;&lt;br&gt;The code is available if you want to see how the package works - or to improve on it!&lt;br&gt;🖥️ GitHub: &lt;a href=&#34;https://t.co/73HDISsd2S&#34;&gt;https://t.co/73HDISsd2S&lt;/a&gt;&lt;br&gt;📄 Preprint: &lt;a href=&#34;https://t.co/dE6jEJHmYH&#34;&gt;https://t.co/dE6jEJHmYH&lt;/a&gt; &lt;br&gt;👩‍🏫Tutorials: &lt;a href=&#34;https://t.co/GdOb6AVYc6&#34;&gt;https://t.co/GdOb6AVYc6&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kenneth Enevoldsen (@KCEnevoldsen) &lt;a href=&#34;https://twitter.com/KCEnevoldsen/status/1370361559898329090?ref_src=twsrc%5Etfw&#34;&gt;March 12, 2021&lt;/a&gt;&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>tomsup 👍</title>
+      <link>/project/tomsup/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/tomsup/</guid>
+      <description>&lt;p&gt;tomsup 👍: Theory of Mind Simulation using Python. Is a Python package for agent based simulations of Theory of Mind under active development. For more on the project please check out the &lt;a href=&#34;https://github.com/KennethEnevoldsen/tomsup&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github&lt;/a&gt; or accosiated papers.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

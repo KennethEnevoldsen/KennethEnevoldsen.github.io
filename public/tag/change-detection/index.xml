@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>change detection | Kenneth Enevoldsen</title>
+    <link>/tag/change-detection/</link>
+      <atom:link href="/tag/change-detection/index.xml" rel="self" type="application/rss+xml" />
+    <description>change detection</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu4ba724bf37c553eb25cabdede402d374_23163_512x512_fill_lanczos_center_2.png</url>
+      <title>change detection</title>
+      <link>/tag/change-detection/</link>
+    </image>
+    
+    <item>
+      <title>When no news is bad news - Detection of negative events from news media content</title>
+      <link>/publications/when-no-news-is-bad-news-detection-of-negative-events-from-news-media-content/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/publications/when-no-news-is-bad-news-detection-of-negative-events-from-news-media-content/</guid>
+      <description>&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;During the first wave of Covid-19 information decoupling could be observed in the flow of news media content. The corollary of the content alignment within and between news sources experienced by readers (i.e., all news transformed into Corona-news), was that the novelty of news content went down as media focused monotonically on the pandemic event. This all-important Covid-19 news theme turned out to be quite persistent as the pandemic continued, resulting in the, from a news media’s perspective, paradoxical situation where the same news was repeated over and over. This information phenomenon, where novelty decreases and persistence increases, has previously been used to track change in news media, but in this study we specifically test the claim that new information decoupling behavior of media can be used to reliably detect change in news media content originating in a negative event, using a Bayesian approach to change point detection.&lt;/p&gt;
+&lt;h1 id=&#34;twitter-thread&#34;&gt;Twitter Thread&lt;/h1&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;During the first wave of Covid-19 a decoupling between novelty and resonance could be observed in the news media stream. We show this decoupling can reliably detect news media originating from negative events&lt;br&gt;&lt;br&gt;For more Check out the preprint: &lt;a href=&#34;https://t.co/c2gyO6O9vn&#34;&gt;https://t.co/c2gyO6O9vn&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kenneth Enevoldsen (@KCEnevoldsen) &lt;a href=&#34;https://twitter.com/KCEnevoldsen/status/1371516255463686145?ref_src=twsrc%5Etfw&#34;&gt;March 15, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

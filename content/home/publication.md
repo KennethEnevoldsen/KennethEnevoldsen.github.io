@@ -35,10 +35,6 @@ design:
   #   3 = Card
   #   4 = Citation (publication only)
   view: 4
-  background:
-    # Name of image in `static/media/`.
-    image: paperwhite.jpg
-    image_parallax: true
 
 ---
 

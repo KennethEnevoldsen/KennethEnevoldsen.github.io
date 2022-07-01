@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks | Kenneth Enevoldsen</title>
+    <link>/event/</link>
+      <atom:link href="/event/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/images/icon_hu4ba724bf37c553eb25cabdede402d374_23163_512x512_fill_lanczos_center_2.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>/event/</link>
+    </image>
+    
+    <item>
+      <title>DaCy and SpaCy</title>
+      <link>/talk/dacy-and-spacy/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>/talk/dacy-and-spacy/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;A presentation of DaCy, an Efficient Danish State-of-the-Art NLP pipeline build on SpaCy, at Extra Bladet, one of the biggest Danish news outlet. The talk include an introduction to SpaCy and why it is relevant and an introduction to application of DaCy to Danish Speeches.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Biases in Machine Learning</title>
+      <link>/talk/biases-in-machine-learning/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>/talk/biases-in-machine-learning/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;A Talk on biases in Machine learning and how it is impossible to fulfill all fairness principles.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression</title>
+      <link>/talk/linear-regression/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      <guid>/talk/linear-regression/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

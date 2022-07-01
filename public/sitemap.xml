@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/talk/dacy-and-spacy/</loc>
+    <lastmod>2021-03-16T09:35:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/danish-nlp/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/low-resource-nlp/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/nlp/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/intro-dacy/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/bias/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/biases-in-machine-learning/</loc>
+    <lastmod>2021-03-15T17:43:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/fairness/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/mathematics/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/ml-bias/</loc>
+    <lastmod>2021-03-15T17:43:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/ml-bias/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/agent-based-simulation/</loc>
+    <lastmod>2021-03-12T17:44:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/bayesian/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/game-theory/</loc>
+    <lastmod>2021-03-12T17:44:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/tomsup-v-1-is-now-available/</loc>
+    <lastmod>2021-03-12T17:44:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/theory-of-mind/</loc>
+    <lastmod>2021-03-12T17:44:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/variational-bayesian-inference/</loc>
+    <lastmod>2021-03-12T17:44:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/new-fast-and-efficient-state-of-the-art-in-danish-nlp/</loc>
+    <lastmod>2021-03-09T09:04:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/3/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/change-detection/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/covid-19/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/information-theory/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/newspapers/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/pandemic-response/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publications/when-no-news-is-bad-news-detection-of-negative-events-from-news-media-content/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/train_bert/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/lasse-hansen/</loc>
+    <lastmod>2021-02-15T13:56:53+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/machine-learning/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/malte-bertelsen/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/teaching/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/teaching-resources/</loc>
+    <lastmod>2021-04-07T20:31:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/arndis-simonsen/</loc>
+    <lastmod>2021-02-15T13:56:53+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publications/tomsup/</loc>
+    <lastmod>2021-02-15T13:56:53+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/peter-t.-waade/</loc>
+    <lastmod>2021-02-15T13:56:53+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/riccardo-fusaroli/</loc>
+    <lastmod>2021-02-15T13:56:53+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/andreas-roepstorff/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/anja-bechmann/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/kristoffer-l.-nielbo/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publications/news_decoupling/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/peter-b.-vahlstrup/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/rebekah-b.-baglini/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/kenneth-enevoldsen/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/linear-regression/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/hope/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/interdisciplinary/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2021-02-26T15:04:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/2/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publications/distant-listening/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/iben-have/</loc>
+    <lastmod>2021-03-15T19:43:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/example/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publications/political_bias/</loc>
+    <lastmod>2021-02-15T13:56:53+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/computational-modeling/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/dacy/</loc>
+    <lastmod>2021-02-26T15:04:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/tomsup/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/admin/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/author/kenneth-enevoldsen/</loc>
+    <lastmod>2021-02-26T15:16:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publications/</loc>
+    <lastmod>2021-02-16T12:53:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/event/</loc>
+    <lastmod>2021-02-12T17:27:59+01:00</lastmod>
+  </url>
+  
+</urlset>

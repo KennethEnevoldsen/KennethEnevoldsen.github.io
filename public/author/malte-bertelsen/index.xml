@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Malte Bertelsen | Kenneth Enevoldsen</title>
+    <link>/author/malte-bertelsen/</link>
+      <atom:link href="/author/malte-bertelsen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Malte Bertelsen</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 12 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu4ba724bf37c553eb25cabdede402d374_23163_512x512_fill_lanczos_center_2.png</url>
+      <title>Malte Bertelsen</title>
+      <link>/author/malte-bertelsen/</link>
+    </image>
+    
+    <item>
+      <title>Fine-Tuning a Danish BERT</title>
+      <link>/post/train_bert/</link>
+      <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/post/train_bert/</guid>
+      <description>&lt;h1 id=&#34;fine-tuning-a-danish-bert&#34;&gt;Fine-tuning a Danish BERT&lt;/h1&gt;
+&lt;p&gt;This tutorial will take you through how to fine-tune a BERT, both for sentence and token classification.&lt;/p&gt;
+&lt;p&gt;Start by installing the requirements by running the following chunk:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;!pip install -r requirements.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;importing-packages&#34;&gt;Importing packages&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# native packages
+import os
+
+# widely use packages
+import pandas as pd
+
+# other packages
+from simpletransformers.ner import NERModel
+from simpletransformers.classification import ClassificationModel
+
+from danlp.datasets import DDT
+import pyconll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;token-classification&#34;&gt;Token Classification&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start by doing a token classification. Token classification is the act of classifying tokens as is for example used to classify whether a token is an entity and what type of entity it is, e.g. person, organization or location. This is typically called named-entity recognition. Other token classification tasks include part-of-speech tagging as well as others. For this example we will train a BERT for named-entity recognition using the tagged data by DaNLP derived from the Danish dependency Treebank. We will start by loading in the data and examining it.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Loading the Danish Dependency Tree data
+ddt = DDT()
+conllu_format = ddt.load_as_conllu(predefined_splits = True)
+
+data = []
+for n in range(len(conllu_format)):
+    data.append([(i, token.form, token.misc.get(&amp;quot;name&amp;quot;).pop()) for i, sent in enumerate(conllu_format[n]) for token in sent]) #Getting the sentence #, Word and Tag.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# this dataset contain a training dataset
+train = pd.DataFrame(data[0], columns = [&#39;sentence_id&#39;, &#39;words&#39;, &#39;labels&#39;]) # note that the names of the columns are important for the model
+# a development test dataset
+test = pd.DataFrame(data[1], columns = [&#39;sentence_id&#39;, &#39;words&#39;, &#39;labels&#39;])
+# and lastly a validation dataset
+validation = pd.DataFrame(data[2], columns = [&#39;sentence_id&#39;, &#39;words&#39;, &#39;labels&#39;])
+
+# examing the first ten rows we see some of the structure of the data
+train.head(10)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Okay so now we are ready to train the model. Beware that this process might take some time to it might be ideal to only use some of the data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# get list of unique labels
+unique_labels = list(train[&#39;labels&#39;].unique())
+
+# we will need to rename the config file from bert_config.json to config.json
+# os.rename(&#39;danish_bert_uncased_v2/bert_config.json&#39;, &#39;danish_bert_uncased_v2/config.json&#39;)
+
+# preparing the model
+model = NERModel(&#39;bert&#39;, model_name = &#39;Maltehb/danish-bert-botxo&#39;, labels=unique_labels, use_cuda=False, args={&#39;overwrite_output_dir&#39;: True, &#39;reprocess_input_data&#39;: True})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Training the model
+model.train_model(train)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;sentence-classification&#34;&gt;Sentence Classification&lt;/h2&gt;
+&lt;p&gt;Sentence classification is the act of classifying a sentence. This could be classyfying the topic of a sentence or classifying whether a sentence is postive or negative. In this case we will try to predict the score of a trustpilot review based on the text of the review. The dataset used for this is avaliable in the &lt;a href=&#34;https://github.com/KennethEnevoldsen/tutorial_fine-tuning_danish_bert&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;tp = pd.read_csv(&amp;quot;trustpilot.csv&amp;quot;)
+tp.columns = [&#39;text&#39;, &#39;labels&#39;] # rename variables - not that the renames variable names are important
+
+tp[&#39;text&#39;] = tp[&#39;text&#39;].astype(&#39;str&#39;)
+tp[&#39;labels&#39;] = tp[&#39;labels&#39;] - 1 # index to zero
+tp.head(10)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# number og unique labels
+n_labels = len(tp[&#39;labels&#39;].unique())
+
+# initialize the model
+sent_model = ClassificationModel(&#39;bert&#39;, &#39;Maltehb/danish-bert-botxo&#39;, num_labels=n_labels, use_cuda=False, args={&#39;reprocess_input_data&#39;: True, &#39;overwrite_output_dir&#39;: True})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# train the model
+sent_model.train_model(tp)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;And that is it! You have now fine-tuned two Danish BERT models for token and sentence classification!🥳&lt;/p&gt;
+&lt;p&gt;To use the model simply use &lt;code&gt;model.predict()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This tutorial was made by &lt;a href=&#34;https://github.com/HLasse&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;L. Hansen&lt;/a&gt;, &lt;a href=&#34;https://github.com/MalteHB&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;M. Højmark-Bertelsen&lt;/a&gt; and &lt;a href=&#34;https://github.com/KennethEnevoldsen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;K. Enevoldsen&lt;/a&gt;. Feel free to ask any question in the GitHub issues.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

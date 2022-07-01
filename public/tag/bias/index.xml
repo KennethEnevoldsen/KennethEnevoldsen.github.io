@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bias | Kenneth Enevoldsen</title>
+    <link>/tag/bias/</link>
+      <atom:link href="/tag/bias/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bias</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu4ba724bf37c553eb25cabdede402d374_23163_512x512_fill_lanczos_center_2.png</url>
+      <title>Bias</title>
+      <link>/tag/bias/</link>
+    </image>
+    
+    <item>
+      <title>Biases in Machine Learning</title>
+      <link>/talk/biases-in-machine-learning/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>/talk/biases-in-machine-learning/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;A Talk on biases in Machine learning and how it is impossible to fulfill all fairness principles.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides: Machine Bias </title>
+      <link>/slides/ml-bias/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>/slides/ml-bias/</guid>
+      <description>&lt;h1 id=&#34;machine-bias-and-probublica&#34;&gt;Machine Bias and Probublica&lt;/h1&gt;
+&lt;p&gt;by Kenneth Enevoldsen | 2021-05-15&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;a-brief-introduction&#34;&gt;A Brief introduction&lt;/h2&gt;
+&lt;p&gt;Propublica and COMPAS&lt;/p&gt;
+&lt;img src=&#34;img/propublica.png&#34;&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;li&gt;PB, article (&amp;ldquo;Bias in errors&amp;rdquo;) -&amp;gt;&lt;/li&gt;
+&lt;li&gt;response from northpoint (&amp;ldquo;statistical parity&amp;rdquo;) -&amp;gt;&lt;/li&gt;
+&lt;li&gt;research (&amp;ldquo;both are not possible&amp;rdquo;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;three-fairness-conditions&#34;&gt;Three fairness conditions&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+Well-calibrated, statistical parity
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+Balance for the positive class
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+Balance for the negative class
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;statistical-parity&#34;&gt;Statistical parity&lt;/h2&gt;
+&lt;p&gt;A person in group $a$ and a person in group $b$ should have equal probability to be assigned to either class positive or negative class.&lt;/p&gt;
+&lt;p&gt;$$
+P(R = + | A=a) = P(R = + | A = b) \quad \forall a, b\in A
+$$&lt;/p&gt;
+&lt;p&gt;Where $R$ is the predicted response variable.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;balance-for-positive-class&#34;&gt;Balance for positive class&lt;/h2&gt;
+&lt;p&gt;The average score received by a positive case (unknown to the model) should be the same in each group.&lt;/p&gt;
+&lt;p&gt;$$
+E(S |Y=+, A=a) = E(S |Y=+, A=b) \quad \forall a, b\in A
+$$&lt;/p&gt;
+&lt;p&gt;Where $S$ is the probability score, $Y$ is the actual response variable.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;balance-for-negative-class&#34;&gt;Balance for negative class&lt;/h2&gt;
+&lt;p&gt;Similar to before:&lt;/p&gt;
+&lt;p&gt;$$
+E(S |Y=-, A=a) = E(S |Y=-, A=b) \quad \forall a, b\in A
+$$&lt;/p&gt;
+&lt;p&gt;Where $S$ is the probability score, $Y$ is the actual response variable.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;theorem-11&#34;&gt;Theorem 1.1&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;Consider an instance of the problem in which there is a risk assignment satisfying the [three fairness conditions]. Then the instance must either allow for perfect prediction [&amp;hellip;] or have equal base rates.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;theorem-12&#34;&gt;Theorem 1.2&lt;/h2&gt;
+&lt;p&gt;The approximate version of 1.1.&lt;/p&gt;
+&lt;p&gt;approximately fair $\Rightarrow$ approximately perfect prediction or approximately equal base rate&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;picking-our-poison-&#34;&gt;Picking our poison 🦠🧪&lt;/h2&gt;
+&lt;p&gt;One of the following must hold:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+the test’s probability estimates are systematically skewed upward or downward for at least one gender
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+the test assigns a higher average risk estimate to healthy people, in one gender than the other
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+the test assigns a higher average risk estimate to carriers of the disease in one gender than the other
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Kleinberg, J., Mullainathan, S., &amp;amp; Raghavan, M. (2016). Inherent Trade-Offs in the Fair Determination of Risk Scores. ArXiv:1609.05807 [Cs, Stat]. &lt;a href=&#34;http://arxiv.org/abs/1609.05807&#34;&gt;http://arxiv.org/abs/1609.05807&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mattu, J. A., Jeff Larson,Lauren Kirchner,Surya. (2016). Machine Bias. ProPublica. Retrieved March 14, 2021, from &lt;a href=&#34;https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing&#34;&gt;https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides: Machine Bias </title>
+      <link>/slides/ml-bias/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>/slides/ml-bias/</guid>
+      <description>&lt;h1 id=&#34;encoding-snps-using-cnns&#34;&gt;Encoding SNP&amp;rsquo;s using CNNs&lt;/h1&gt;
+&lt;p&gt;by Kenneth Enevoldsen | 2021-05-18&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;agenda&#34;&gt;Agenda&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What we did&lt;/li&gt;
+&lt;li&gt;Convolutional Neural Networks&lt;/li&gt;
+&lt;li&gt;Alternative approaches&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;denoising-autoencoder&#34;&gt;Denoising Autoencoder&lt;/h2&gt;
+&lt;img src=&#34;img/denoising-autoencoder-architecture.png&#34;&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;input-data&#34;&gt;Input data&lt;/h2&gt;
+&lt;p&gt;SNP Encoding:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;0&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;2&lt;/th&gt;
+&lt;th&gt;NA&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Example data&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;reconstruction&#34;&gt;Reconstruction&lt;/h2&gt;
+&lt;img src=&#34;img/reconstruction.png&#34;&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;predicition&#34;&gt;Predicition&lt;/h2&gt;
+&lt;img src=&#34;img/encoding_pred.png&#34;&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;
+&lt;img src=&#34;img/perf.png&#34; height=&#34;700&#34;&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1d-convolutional&#34;&gt;1D Convolutional&lt;/h2&gt;
+&lt;img src=&#34;img/stride_2.gif&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduces number of trainable parameters&lt;/li&gt;
+&lt;li&gt;Parallel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;activation-function&#34;&gt;Activation function&lt;/h2&gt;
+&lt;img src=&#34;img/relu.png&#34;&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2d-convolutional&#34;&gt;2D Convolutional&lt;/h2&gt;
+&lt;img src=&#34;img/same_padding_no_strides.gif&#34;&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;training&#34;&gt;Training&lt;/h2&gt;
+&lt;img src=&#34;img/backprop.png&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;optimizer: Adam&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;alternative-approaches&#34;&gt;Alternative Approaches&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Recurrent models&lt;/li&gt;
+&lt;li&gt;Positional Encodings&lt;/li&gt;
+&lt;li&gt;Attention-based models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;recurrent-models&#34;&gt;Recurrent models&lt;/h2&gt;
+&lt;img src=&#34;img/rnn.gif&#34;&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;recurrent-encoding&#34;&gt;Recurrent Encoding&lt;/h2&gt;
+&lt;img src=&#34;img/lstm_encoding.png&#34;&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;bidirectional&#34;&gt;Bidirectional&lt;/h3&gt;
+&lt;img src=&#34;img/bidirectional.gif&#34;&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;positional-encoding&#34;&gt;Positional Encoding&lt;/h3&gt;
+&lt;img src=&#34;img/positional.png&#34;&gt;
+&lt;img src=&#34;img/positional_mat.png&#34;&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;attention&#34;&gt;Attention&lt;/h3&gt;
+&lt;img src=&#34;img/positional.png&#34;&gt;
+&lt;img src=&#34;img/positional_mat.png&#34;&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interdisciplinary | Kenneth Enevoldsen</title>
+    <link>/tag/interdisciplinary/</link>
+      <atom:link href="/tag/interdisciplinary/index.xml" rel="self" type="application/rss+xml" />
+    <description>Interdisciplinary</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu4ba724bf37c553eb25cabdede402d374_23163_512x512_fill_lanczos_center_2.png</url>
+      <title>Interdisciplinary</title>
+      <link>/tag/interdisciplinary/</link>
+    </image>
+    
+    <item>
+      <title>HOPE: How Democracies Cope with Covid-19</title>
+      <link>/project/hope/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/project/hope/</guid>
+      <description>&lt;p&gt;How do democracies react and cope as the COVID-19 crisis unfolds and with what effects? This is the core question we ask in the HOPE project - “How Democracies Cope with COVID-19: A Data-Driven Approach”. The HOPE project constitutes an unprecedented research project which examines the interrelationship between&lt;/p&gt;
+&lt;p&gt;the trajectory of the COVID-19 pandemic
+the decisions of governments and international organisations
+the decisions of media and social media landscapes
+citizens’ behavior and well-being
+To this end, we utilize the fact that the COVID-19 pandemic is unfolding in the middle of the “big data” revolution. For the first time in human history, we are able to measure with extreme precision and time-resolution how governments and citizens react (and with what consequences) during an extremely severe crisis.&lt;/p&gt;
+&lt;p&gt;The HOPE project involves two phases. The first phase occurs during the unfolding of the COVID-19 pandemic and focuses all resources on data-harvesting and rapid analyses. Analyses are publicly available on the HOPE project’s webpage and are disseminated to key national authorities, the media and the general public to enhance their ability to contain and reflect on the COVID-19 pandemic. In Denmark, the HOPE project shares public opinion data and advice with the Danish parliament and government. The HOPE project is also advising and sharing self-reported and observed data on behavior with the national health authorities. Achieving the highest level of social scientific responsibility is crucial in this phase.&lt;/p&gt;
+&lt;p&gt;The second phase occurs after the COVID-19 pandemic and focuses on understanding and evaluating how the different strategies and events shaped the trajectory of the pandemic across different countries.&lt;/p&gt;
+&lt;p&gt;The HOPE project is funded by a DKK 25 million grant from the Carlsberg Foundation.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
