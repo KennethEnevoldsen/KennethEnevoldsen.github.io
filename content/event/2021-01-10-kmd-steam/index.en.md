@@ -1,28 +1,26 @@
 ---
-title: "Biases in Machine Learning"
+title: Size Matters: On the influence of large language models
 author: admin
-date: '2021-03-15'
-summary: A Talk on biases in Machine learning and how it is impossible to fullfill all fairness principles.
-
-slug: biases-in-machine-learning
+date: '2022-05-27'
+slug: au-digital-innovation-conference-2022
 categories: []
 tags:
-  - Bias
-  - Fairness
-  - Mathematics
-subtitle: ''
-summary: ''
+  - NLP
+  - Danish NLP
+  - Low-resource NLP
+summary: 'In recent years natural language processing has seen the introduction of ever larger models. In this talk Malte Højmark-Bertelsen and I presented the current developments and how this changes how we should this about developing NLP systems.'
 authors: []
-lastmod: '2021-03-15T10:58:11+01:00'
+lastmod: '2022-06-30T17:27:52+01:00'
 featured: no
 image:
   caption: ''
   focal_point: ''
   preview_only: no
-projects: []
-
-slides: 2021-03-15-ml-bias
+links:
+  - name: Slides
+    url: https://github.com/KennethEnevoldsen/KennethEnevoldsen.github.io/raw/master/content/event/2022-05-25-au-digital-innovation-conference/WhenNorwegiansAreBetterAtDanishThanDanes.pdf
 ---
 
+
 # Summary
-A Talk on biases in Machine learning and how it is impossible to fulfill all fairness principles.
+In recent years natural language processing has seen the introduction of ever larger models. In this talk Malte Højmark-Bertelsen and I presented the current developments and how this changes how we should this about developing NLP systems.
