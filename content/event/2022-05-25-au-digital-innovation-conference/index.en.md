@@ -8,7 +8,7 @@ tags:
   - NLP
   - Danish NLP
   - Low-resource NLP
-subtitle: ' The State and Shortcomings of the Danish NLP, and How We Fix Them'
+subtitle: 'The State and Shortcomings of the Danish NLP, and How We Fix Them'
 summary: 'Within the last decade language models like GPT3 or BERT have become the standard in Natural Language Processing (NLP) across a wide variety of tasks from translation to hate speech detection. Even low-resource languages like Danish have their own language model, but Norwegian models perform better than Danish model!? This talk will walk you through the current state and shortcoming of the Danish NLP and how we plan to improve them through a nationwide cross-sector collaboration.'
 authors: []
 lastmod: '2022-06-30T17:27:52+01:00'
