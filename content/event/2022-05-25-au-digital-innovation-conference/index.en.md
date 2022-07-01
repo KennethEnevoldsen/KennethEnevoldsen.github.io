@@ -20,6 +20,9 @@ image:
 links:
   - name: Conference
     url: https://www.digitalinnovationfestival.dk/digital-innovation-conference/
+links:
+  - name: Slides
+    url: https://github.com/KennethEnevoldsen/KennethEnevoldsen.github.io/raw/master/content/event/2022-05-25-au-digital-innovation-conference/WhenNorwegiansAreBetterAtDanishThanDanes.pdf
 projects:
   - dfm
 ---
