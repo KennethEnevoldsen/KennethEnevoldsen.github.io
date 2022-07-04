@@ -2,7 +2,7 @@
 title: Size Matters: On the influence of large language models
 author: admin
 date: '2022-05-27'
-slug: au-digital-innovation-conference-2022
+slug: kmd-steam
 categories: []
 tags:
   - NLP
@@ -18,7 +18,7 @@ image:
   preview_only: no
 links:
   - name: Slides
-    url: https://github.com/KennethEnevoldsen/KennethEnevoldsen.github.io/raw/master/content/event/2022-05-25-au-digital-innovation-conference/WhenNorwegiansAreBetterAtDanishThanDanes.pdf
+    url: https://github.com/KennethEnevoldsen/KennethEnevoldsen.github.io/raw/master/content/event/2021-01-10-kmd-steam/Size_Matters_KMD_STEAM.pdf
 ---
 
 
