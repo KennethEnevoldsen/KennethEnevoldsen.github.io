@@ -34,8 +34,7 @@ site_url = "https://kennethenevoldsen.com"
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2025 The authors<br>
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" alt="CC BY 4.0" style="border:0;"></a>
+Copyright &copy; 2025 The authors. All content is available under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>.
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -45,10 +44,15 @@ Copyright &copy; 2025 The authors<br>
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+nav = [
+    { "Me" = "index.md" },
+    { "Publications" = "publications.md" },
+    { "CV" = "cv.md" },
+    { "Blog" = [
+        "blog/new-website.md",
+        "blog/dacy.md",
+    ] },
+]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -73,9 +77,6 @@ Copyright &copy; 2025 The authors<br>
 # ----------------------------------------------------------------------------
 [project.theme]
 
-# change this to "classic" to use the traditional Material for MkDocs look.
-#variant = "classic"
-
 # Zensical allows you to override specific blocks, partials, or whole
 # templates as well as to define your own templates. To do this, uncomment
 # the custom_dir setting below and set it to a directory in which you
@@ -94,7 +95,8 @@ Copyright &copy; 2025 The authors<br>
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
-#favicon = "images/favicon.png"
+favicon = "logos/times_new_roman_k.png"
+logo = "logos/times_new_roman_k.png"
 
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
@@ -249,25 +251,28 @@ features = [
     #"toc.integrate",
 ]
 
-# ----------------------------------------------------------------------------
-# In the "palette" subsection you can configure options for the color scheme.
-# You can configure different color # schemes, e.g., to turn on dark mode,
-# that the user can switch between. Each color scheme can be further
-# customized.
-#
-# Read more:
-# - https://zensical.org/docs/setup/colors/
-# ----------------------------------------------------------------------------
+# Palette toggle for automatic mode
 [[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+accent = "orange"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
+accent = "orange"
 
+# Palette toggle for dark mode
 [[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
-toggle.name = "Switch to light mode"
-
+toggle.name = "Switch to system preference"
+accent = "orange"
 # ----------------------------------------------------------------------------
 # In the "font" subsection you can configure the fonts used. By default, fonts
 # are loaded from Google Fonts, giving you a wide range of choices from a set
@@ -278,24 +283,6 @@ toggle.name = "Switch to light mode"
 #text = "Inter"
 #code = "Jetbrains Mono"
 
-# ----------------------------------------------------------------------------
-# You can configure your own logo to be shown in the header using the "logo"
-# option in the "icons" subsection. The logo can be a path to a file in your
-# "docs_dir" or it can be a path to an icon.
-#
-# Likewise, you can customize the logo used for the repository section of the
-# header. Zensical derives the default logo for this from the repository URL.
-# See below...
-#
-# There are other icons you can customize. See the documentation for details.
-#
-# Read more:
-# - https://zensical.org/docs/setup/logo-and-icons
-# - https://zensical.org/docs/authoring/icons-emojis/#search
-# ----------------------------------------------------------------------------
-#[project.theme.icon]
-#logo = "lucide/smile"
-#repo = "lucide/smile"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
