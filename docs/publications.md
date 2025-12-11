@@ -19,8 +19,9 @@ A somewhat up to date list of publications. For an alternative view check out my
     MMTEB was a large scale community collaboration of more than 50 authors to expands embedding benchmark MTEB to expand the multilingual coverage to more than 250 languages, while significantly reducing inference cost. It is today one of the de-facto bencharks for embeddings.
 
     ---
-    [:lucide-github:](https://github.com/embeddings-benchmark/mteb){ .md-button }
-    [:lucide-newspaper:](https://openreview.net/forum?id=zl3pfz4VCV){ .md-button }
+    [:lucide-github: Code](https://github.com/embeddings-benchmark/mteb){ .md-button }
+    [:lucide-newspaper: Paper](https://openreview.net/forum?id=zl3pfz4VCV){ .md-button }
+    [:lucide-notepad-text: Blog](https://huggingface.co/blog/isaacchung/mteb-v2){ .md-button }
 
 -   **Dynaword: From One-shot to Continuously Developed Datasets**
 
@@ -29,8 +30,8 @@ A somewhat up to date list of publications. For an alternative view check out my
     Dynaword is a framework for continously expanding open datasets of training data for large language models. We prove that this framework works by providing an implementation of it, the Danish Dynaword, which have grown by more than 6x in less than a year. 
 
     ---
-    [:lucide-database:](https://huggingface.co/datasets/danish-foundation-models/danish-dynaword){ .md-button }
-    [:lucide-newspaper:](https://arxiv.org/abs/2508.02271){ .md-button }
+    [:lucide-database: Data](https://huggingface.co/datasets/danish-foundation-models/danish-dynaword){ .md-button }
+    [:lucide-newspaper: Paper](https://arxiv.org/abs/2508.02271){ .md-button }
 
 -   **Dacy: A Unified Framework for Danish NLP**
 
@@ -39,8 +40,8 @@ A somewhat up to date list of publications. For an alternative view check out my
     DaCy is a unified framework for Danish NLP built still todays (2025) offer state-of-the-art performance for Danish Named entity recognition, dependency parsing, parts-of-speech tagging and more.
 
     ---
-    [:lucide-github:](https://github.com/centre-for-humanities-computing/DaCy/){ .md-button }
-    [:lucide-newspaper:](https://ceur-ws.org/Vol-2989/short_paper24.pdf){ .md-button }
+    [:lucide-github: Code](https://github.com/centre-for-humanities-computing/DaCy/){ .md-button }
+    [:lucide-newspaper: Paper](https://ceur-ws.org/Vol-2989/short_paper24.pdf){ .md-button }
 
 
 </div>

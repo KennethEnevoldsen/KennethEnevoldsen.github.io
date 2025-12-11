@@ -5,24 +5,21 @@ icon: lucide/circle-user-round
 
 # Hi I'm Kenneth 👋
 
-<img src="images/me.png" alt="Me" style="float: right; width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 3px solid rgba(0,0,0,0.08); box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: -3.00rem 0 1rem 1rem;" />
+<img src="images/me.png" alt="Me" style="float: right; width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 3px solid rgba(0,0,0,0.08); box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: -4.50rem 0 1rem 1rem;" />
 
 
-I am a postdoc at Aarhus University, an interdisplinary researcher and an open-source developer.
+I am a postdoc at Aarhus University, an open-source developer and researcher.
 
-My two current research passions are: 
+My two current research passions are:
 
-- Continuous development of language models, e.g. "How do we best get to a point where we will see PRs on large models?". This research path touches upon multiple paths including continual learning, resource efficent representation learning, as well as model and data governance. 
-- Evaluations and meta evaluation of language models, e.g. "is it possible to estimate the performance of one a new unseen sample?", "what is the relation between language and mathematical reasoning?" etc. This can see application in multiple areas including efficient evaluation, model development, adaptive evaluation, test-time evaluation and more broadly can help us come closer to an understanding of intelligence.
+- **Continuous development of language models**: How do we best get to a point where we see PRs on large models? This research touches on continual learning, resource-efficient representation learning, and model and data governance.
+- **Evaluation and meta-evaluation of language models**: Can we estimate performance on new, unseen samples? What is the relation between language and mathematical reasoning? This work has applications in efficient evaluation, model development, adaptive evaluation, and test-time evaluation—and more broadly helps us understand intelligence itself.
 
-I have publication in multiple fields including artificial intelligence, language processing, psychiatry, cognitive science, computational humanities, and bioinformatics
-and while I love the interdisciplinary work most of my time is spend in the fields first in the list. 
+I have publications spanning artificial intelligence, natural language processing, psychiatry, cognitive science, computational humanities, and bioinformatics. While I love interdisciplinary work, most of my time is spent in the fields at the start of that list.
 
-I found that whole-heartedly enjoy the scientific method, to the point where variable control I find enjoyable when I brew coffee.
-And why wouldn't you! Learning is fun and you can't learn learn if you don't know how much coffee you put in down to the gram. 
-Besides coffee and science I also enjoy cooking and being active. 
+I've found that I wholeheartedly enjoy the scientific method, to the point where I find variable control enjoyable even when brewing coffee. And why wouldn't you? Learning is fun, and you can't learn if you don't measure your coffee down to the gram! Besides coffee and science, I also enjoy cooking and staying active.
 
-If you want so chat, do feel free to reach out.
+Feel free to reach out if you want to chat.
 
 ---
 
