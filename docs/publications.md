@@ -22,11 +22,15 @@ A somewhat up to date list of publications. For an alternative view check out my
     [:lucide-github:](https://github.com/embeddings-benchmark/mteb){ .md-button }
     [:lucide-newspaper:](https://openreview.net/forum?id=zl3pfz4VCV){ .md-button }
 
--   **Dynaword: From One-shot to Continuously Developed DatasetsP**
+-   **Dynaword: From One-shot to Continuously Developed Datasets**
 
-    ![Image title](https://dummyimage.com/600x400/f5f5f5/aaaaaa?text=–%20Image%20–){ align=left width=300 }
+    ![](./images/publications/dynaword.png){ align=left width=300 }
 
-    ADD TEXT
+    Dynaword is a framework for continously expanding open datasets of training data for large language models. We prove that this framework works by providing an implementation of it, the Danish Dynaword, which have grown by more than 6x in less than a year. 
+
+    ---
+    [:lucide-database:](https://huggingface.co/datasets/danish-foundation-models/danish-dynaword){ .md-button }
+    [:lucide-newspaper:](https://arxiv.org/abs/2508.02271){ .md-button }
 
 -   **Dacy: A Unified Framework for Danish NLP**
 
