@@ -1,7 +1,7 @@
 serve-docs:
 	rm -rf ./site
 	rm -rf ./.cache
-	zensical serve
+	uv run zensical serve
 
 build-docs:
-	zensical build
+	uv run zensical build

@@ -24,7 +24,7 @@ Feel free to reach out if you want to chat.
 ---
 
 [:lucide-send:](mailto:kce.prognosis296@passinbox.com){ .md-button }
-[:lucide-github:](mailto:kce.prognosis296@passinbox.com){ .md-button }
-[:lucide-graduation-cap:](mailto:kce.prognosis296@passinbox.com){ .md-button }
-[:lucide-linkedin:](mailto:kce.prognosis296@passinbox.com){ .md-button }
-[:lucide-university:](mailto:kce.prognosis296@passinbox.com){ .md-button }
+[:lucide-github:](https://github.com/KennethEnevoldsen){ .md-button }
+[:lucide-graduation-cap:](https://scholar.google.com/citations?user=VJRMvHUAAAAJ&hl=da){ .md-button }
+[:lucide-linkedin:](https://www.linkedin.com/in/kennethenevoldsen/){ .md-button }
+[:lucide-university:](https://pure.au.dk/portal/da/persons/kenneth.enevoldsen@cc.au.dk){ .md-button }
