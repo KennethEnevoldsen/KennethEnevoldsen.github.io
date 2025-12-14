@@ -48,9 +48,9 @@ nav = [
     { "Me" = "index.md" },
     { "Publications" = "publications.md" },
     { "CV" = "cv.md" },
-    { "Blog" = [
-        "blog/2025-12-11-oh-look-a-new-website/new-website.md",
-    ] },
+    # { "Blog" = [
+    #     "blog/2025-12-11-oh-look-a-new-website/new-website.md",
+    # ] },
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
