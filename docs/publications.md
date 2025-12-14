@@ -97,8 +97,9 @@ icon: lucide/atom
 - **Enevoldsen, K. C.,** & Hansen, L. (2017). Analysing political biases in danish newspapers using sentiment analysis. Journal of Language Works-Sprogvidenskabeligt Studentertidsskrift, 2(2), 87–98.
 
 
-## Preprints and non-peer-reviewed software
-
+## Preprints and Reports
 - Rystrøm, J. H., & **Enevoldsen, K. C.** (2024). Exposing Assumptions in AI Benchmarks through Cognitive Modelling (No. arXiv:2409.16849). arXiv. https://doi.org/10.48550/arXiv.2409.16849
 - **Enevoldsen, K.**, Hansen, L., Nielsen, D. S., Egebæk, R. A. F., Holm, S. V., Nielsen, M. C., Bernstorff, M., Larsen, R., Jørgensen, P. B., Højmark-Bertelsen, M., Vahlstrup, P. B., Møldrup-Dalum, P., & Nielbo, K. (2023). Danish Foundation Models (No. arXiv:2311.07264). arXiv. https://doi.org/10.48550/arXiv.2311.07264
+
+## Non-peer-reviewed software
 - **Enevoldsen, K.** (2021). Asent: Fast, flexible and transparent sentiment analysis.
