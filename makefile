@@ -4,4 +4,5 @@ serve-docs:
 	uv run zensical serve
 
 build-docs:
-	uv run zensical build
+	uv run zensical build --clean
+	open ./site/index.html
