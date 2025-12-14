@@ -7,7 +7,6 @@ icon: lucide/circle-user-round
 
 <img src="images/me.png" alt="Me" style="float: right; width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 3px solid rgba(0,0,0,0.08); box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: -4.50rem 0 1rem 1rem;" />
 
-
 I am a postdoc at Aarhus University, an open-source developer and researcher.
 
 My two current research passions are:
