@@ -14,13 +14,13 @@ My previous website had gotten quite stale. It wasn't that I didn't want to upda
 <div class="grid" markdown>
 
 <figure markdown>
-<img src="./old_site.png" alt="The previous site" style="height: 200px; width: auto;">
-<figcaption>Before: The old site</figcaption>
+![The old site](./old_site.png){ style="height: 200px; width: auto;" }
+<figcaption>The old site</figcaption>
 </figure>
 
 <figure markdown>
-<img src="./new_site.png" alt="The new site" style="height: 200px; width: auto;">
-<figcaption>After: The new Zensical-powered site</figcaption>
+![The new site](./new_site.png){ style="height: 200px; width: auto;" }
+<figcaption>The new site</figcaption>
 </figure>
 
 </div>
