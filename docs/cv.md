@@ -42,9 +42,11 @@ icon: lucide/file-user
 ### Employment
 
 <div class="cv-entry">
-<span class="cv-date">2025–present</span>
+<span class="cv-date">2026–present</span>
 <div>
 <strong>Assistant Professor</strong>, Aarhus University
+<span class="cv-sub">Research on continuous development and evaluation of language models · Manage AarhusNLP</span>
+
 </div>
 </div>
 
@@ -197,7 +199,7 @@ icon: lucide/file-user
 <span class="cv-date">2024-present</span>
 <div>
 <strong>Massive Multilingual Embedding Benchmark (MTEB)</strong><br>
-<span class="cv-sub">The de-facto Python package and benchmark for evaluating text and image embedding models across languages and use cases · Core developer and maintainer</span>
+<span class="cv-sub">The de-facto Python package and benchmark for evaluating text, image, audio and video embedding models across languages and use cases · Core developer and maintainer</span>
 </div>
 </div>
 
