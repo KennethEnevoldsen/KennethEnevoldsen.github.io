@@ -125,10 +125,17 @@ icon: lucide/file-user
 ### Counseling
 
 <div class="cv-entry">
-<span class="cv-date">2023-2024</span>
+<span class="cv-date">2023-2026</span>
 <div>
 <strong>The Danish Agency for Digital Governance</strong> (Digitaliseringsstyrelsen)<br>
-<span class="cv-sub">Invited presentations and counselling on current limitations and opportunities of language technology for Danish</span>
+<span class="cv-sub">Invited presentations and counselling on data and evaluation of AI</span>
+</div>
+</div>
+<div class="cv-entry">
+<span class="cv-date">2026</span>
+<div>
+<strong>Agency for Climate Data</strong> (Klimadatastyrelsen)<br>
+<span class="cv-sub">Invited presentations measuring the impact of AI</span>
 </div>
 </div>
 
