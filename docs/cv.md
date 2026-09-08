@@ -44,6 +44,13 @@ icon: lucide/file-user
 <div class="cv-entry">
 <span class="cv-date">2025–present</span>
 <div>
+<strong>Assistant Professor</strong>, Aarhus University
+</div>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2025–2026</span>
+<div>
 <strong>Postdoc</strong>, Aarhus University<br>
 <span class="cv-sub">Research on continuous development and evaluation of language models</span>
 </div>
