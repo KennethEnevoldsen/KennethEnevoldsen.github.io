@@ -1,0 +1,4 @@
+/* No logo in the header */
+.md-header__button.md-logo {
+  display: none;
+}

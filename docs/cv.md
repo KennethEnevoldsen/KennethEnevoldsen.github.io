@@ -3,6 +3,15 @@ icon: lucide/file-user
 ---
 
 <style>
+.cv-contact {
+  margin-left: calc(120px + 2em);
+  color: var(--md-default-fg-color--light);
+}
+
+.cv-contact p {
+  margin: 0.3em 0;
+}
+
 .cv-entry {
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -44,9 +53,10 @@ icon: lucide/file-user
 
 # CV
 
-<div class="cv-buttons" markdown>
-[:lucide-send: kenneth.enevoldsen@cas.au.dk](mailto:kenneth.enevoldsen@cas.au.dk){ .md-button }
-[:lucide-github: github.com/KennethEnevoldsen](https://github.com/KennethEnevoldsen){ .md-button }
+<div class="cv-contact" markdown>
+:lucide-mail: kenneth.enevoldsen&#64;cas.au.dk
+
+:fontawesome-brands-github: github.com/KennethEnevoldsen
 </div>
 
 ### Employment
@@ -164,7 +174,7 @@ icon: lucide/file-user
 <span class="cv-date"></span>
 <div>
 <strong>Active reviewer</strong><br>
-<span class="cv-sub">ACL Rolling Review (ARR), NeurIPS, ICLR, and the Journal of Open Source Software (JOSS)</span>
+<span class="cv-sub">ACL Rolling Review (ARR), NeurIPS (Top Reviewer 2026; <a href="certificates/neurips-2026-top-reviewer.pdf" download title="2026">1</a>), ICLR, and the Journal of Open Source Software (JOSS) (<a href="https://github.com/openjournals/joss-reviews/issues/7211" title="ollamar">1</a>, <a href="https://github.com/openjournals/joss-reviews/issues/6452" title="Jury">2</a>, <a href="https://github.com/openjournals/joss-reviews/issues/6143" title="PerMetrics">3</a>)</span>
 </div>
 </div>
 
@@ -172,7 +182,7 @@ icon: lucide/file-user
 <span class="cv-date"></span>
 <div>
 <strong>Previously reviewed for</strong><br>
-<span class="cv-sub">Northern European Journal of Language Technology, Acta Psychiatrica Scandinavica, Behavior Research Methods, Computational Humanities Research, and Digital Humanities Benelux</span>
+<span class="cv-sub">Northern European Journal of Language Technology, Acta Psychiatrica Scandinavica (<a href="certificates/acps-2021.pdf" download title="2021">1</a>, <a href="certificates/acps-2023.pdf" download title="2023">2</a>), Behavior Research Methods (<a href="certificates/behavior-research-methods-2021.pdf" download title="2021">1</a>), Journal of Clinical Monitoring and Computing (<a href="certificates/jcmc-2023.pdf" download title="2023">1</a>), BMC Medicine (<a href="certificates/bmc-medicine-2024.pdf" download title="2024">1</a>), Humanities and Social Sciences Communications (<a href="certificates/hssc-2024.pdf" download title="2024">1</a>), Computational Humanities Research, and Digital Humanities Benelux</span>
 </div>
 </div>
 

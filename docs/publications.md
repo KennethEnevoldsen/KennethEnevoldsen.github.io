@@ -5,10 +5,11 @@ icon: lucide/atom
 
 # Publications
 
-[:fontawesome-brands-google-scholar: Google Scholar](https://scholar.google.com/citations?user=VJRMvHUAAAAJ&hl=da){ .md-button }
-[:fontawesome-brands-orcid: ORCID](https://orcid.org/0000-0001-8733-0966){ .md-button }
-
-
+<div markdown style="font-size: 0.8rem; opacity: 0.75;">
+[:fontawesome-brands-google-scholar: Google Scholar](https://scholar.google.com/citations?user=VJRMvHUAAAAJ&hl=da) &nbsp;·&nbsp;
+[:fontawesome-brands-orcid: ORCID](https://orcid.org/0000-0001-8733-0966) &nbsp;·&nbsp;
+[:lucide-university: AU profile](https://pure.au.dk/portal/da/persons/kenneth.enevoldsen@cc.au.dk)
+</div>
 
 ## Highlights
 
@@ -32,7 +33,7 @@ icon: lucide/atom
     Dynaword is a framework for continously expanding open datasets of training data for large language models. We prove that this framework works by providing an implementation of it, the Danish Dynaword, which have grown by more than 6x in less than a year. 
 
     ---
-    [:lucide-database: Data](https://huggingface.co/datasets/danish-foundation-models/danish-dynaword){ .md-button }
+    [:lucide-database: Data](https://huggingface.co/collections/danish-foundation-models/dynawords){ .md-button }
     [:lucide-newspaper: Paper](https://arxiv.org/abs/2508.02271){ .md-button }
 
 -   **Dacy: A Unified Framework for Danish NLP**
@@ -52,6 +53,14 @@ icon: lucide/atom
 <style>
 .grid.cards {
     grid-template-columns: 1fr !important;
+}
+
+.md-typeset li a:not(.md-button):not(.headerlink) {
+    color: inherit;
+    text-decoration: none;
+}
+.md-typeset li a:not(.md-button):not(.headerlink):hover {
+    color: var(--md-accent-fg-color);
 }
 </style>
 

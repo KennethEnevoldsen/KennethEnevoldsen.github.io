@@ -34,7 +34,7 @@ site_url = "https://kennethenevoldsen.com"
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2025 The authors. All content is available under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>.
+All content is available under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>.
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -61,7 +61,7 @@ nav = [
 #
 # Read more: https://zensical.org/docs/customization/#additional-css
 #
-#extra_css = ["stylesheets/extra.css"]
+extra_css = ["stylesheets/extra.css"]
 
 # With the `extra_javascript` option you can add your own JavaScript to your
 # project to customize the behavior according to your needs.
@@ -94,7 +94,6 @@ nav = [
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
 favicon = "logos/times_new_roman_k.png"
-logo = "logos/times_new_roman_k.png"
 
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
@@ -170,11 +169,6 @@ features = [
     # navigation sidebar by default.
     # https://zensical.org/docs/setup/navigation/#navigation-expansion
     # "navigation.expand",
-
-    # This feature turns on navigation elements in the footer that allow the
-    # user to navigate to a next or previous page.
-    # https://zensical.org/docs/setup/footer/#navigation
-    "navigation.footer",
 
     # When section index pages are enabled, documents can be directly attached
     # to sections, which is particularly useful for providing overview pages.
@@ -291,7 +285,7 @@ link = "mailto:kce.prognosis296@passinbox.com"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
-link = "https://github.com/KennethEnevoldsen/KennethEnevoldsen.github.io"
+link = "https://github.com/KennethEnevoldsen"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/bluesky"
@@ -299,4 +293,4 @@ link = "https://bsky.app/profile/kennethenevoldsen.bsky.social"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/linkedin"
-link = "https://bsky.app/profile/kennethenevoldsen.bsky.social"
+link = "https://www.linkedin.com/in/kennethenevoldsen/"
