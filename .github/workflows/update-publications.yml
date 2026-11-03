@@ -1,0 +1,35 @@
+name: Update publications
+on:
+  schedule:
+    - cron: "17 4 * * *" # daily, 04:17 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: update-publications
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.13
+      - name: Fetch OpenAlex and update docs/publications.md
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python scripts/update_publications.py --report "$RUNNER_TEMP/report.md"
+      # A PR (rather than a direct push) so new entries can be reviewed or dropped,
+      # and because pushes made with GITHUB_TOKEN would not trigger the Pages deploy anyway.
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: auto/update-publications
+          delete-branch: true
+          commit-message: "chore: update publications from OpenAlex"
+          title: "Update publications from OpenAlex"
+          body-path: ${{ runner.temp }}/report.md
+          add-paths: |
+            docs/publications.md
+            data/publications/openalex.bib

@@ -1,0 +1,9 @@
+# Patterns (case-insensitive substrings of the OpenAlex id, DOI or title) that stop an
+# OpenAlex work from being added to docs/publications.md. Add a line whenever the
+# updater picks up something you do not want on the page, with a comment saying why.
+
+# Handbook chapters are already covered by the single combined entry in local.bib
+10.4337/9781802208993
+
+# Duplicate record of the NeurIPS paper (Aarhus Pure copy with a different title)
+Evaluating Multilingual and Monolingual Text Embedding for Scandinavian languages
