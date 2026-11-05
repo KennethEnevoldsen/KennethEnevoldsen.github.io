@@ -11,7 +11,7 @@ the page are left alone.
 
 Control files (all in data/publications/):
   local.bib    hand-maintained entries. `status` decides where an entry goes:
-                 published | preprint | software -> rendered in the matching section
+                 published | chapter | preprint | software -> rendered in the matching section
                  in-review                       -> kept here but NOT rendered; change
                                                     status to `published` when it is out
                  hidden                          -> never rendered (drop, but keep a record)
@@ -54,6 +54,7 @@ END = "<!-- publications:end -->"
 
 SECTIONS = [
     ("published", "Peer-reviewed and Accepted", "*Sorted by year, but otherwise in no particular order*"),
+    ("chapter", "Book Chapters", None),
     ("preprint", "Preprints and Reports", None),
     ("software", "Non-peer-reviewed software", None),
 ]
@@ -186,9 +187,15 @@ def end_sentence(s: str) -> str:
     return s if s.endswith((".", "?", "!")) else s + "."
 
 
+def render_title(title: str) -> str:
+    """Italic title; the closing period (if any) stays outside the emphasis."""
+    title = title.replace("*", "")
+    return f"*{title}*" if title.endswith(("?", "!")) else f"*{title.rstrip('.')}*."
+
+
 def render_entry(e: dict) -> str:
     year = e.get("year", "n.d.")
-    line = f"- {render_authors(e.get('author', ''), truncate=bool(e.get('openalex')))} ({year}). {end_sentence(e['title'])}"
+    line = f"- {render_authors(e.get('author', ''), truncate=bool(e.get('openalex')))} ({year}). {render_title(e['title'])}"
     venue = e.get("journal", "")
     if venue:
         if e.get("volume"):
@@ -196,11 +203,7 @@ def render_entry(e: dict) -> str:
         if e.get("pages"):
             venue += f", {e['pages']}"
         line += " " + end_sentence(venue)
-    url = e.get("url") or (f"https://doi.org/{entry_doi(e)}" if entry_doi(e) else "")
-    if url and url not in line:
-        if not line.endswith("."):
-            line += "."
-        line += f" {url}"
+    # URLs/DOIs stay in the .bib files but are deliberately not shown on the page.
     return line
 
 

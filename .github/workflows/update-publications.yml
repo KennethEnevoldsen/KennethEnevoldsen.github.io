@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-  pull-requests: write
+  actions: write # to start the Pages deploy
 concurrency:
   group: update-publications
   cancel-in-progress: false
@@ -21,15 +21,23 @@ jobs:
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python scripts/update_publications.py --report "$RUNNER_TEMP/report.md"
-      # A PR (rather than a direct push) so new entries can be reviewed or dropped,
-      # and because pushes made with GITHUB_TOKEN would not trigger the Pages deploy anyway.
-      - uses: peter-evans/create-pull-request@v7
-        with:
-          branch: auto/update-publications
-          delete-branch: true
-          commit-message: "chore: update publications from OpenAlex"
-          title: "Update publications from OpenAlex"
-          body-path: ${{ runner.temp }}/report.md
-          add-paths: |
-            docs/publications.md
-            data/publications/openalex.bib
+      # Commit straight to the default branch. Pushes made with GITHUB_TOKEN do not trigger
+      # other workflows, so the Pages deploy is started explicitly via workflow_dispatch.
+      - name: Commit and deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- docs/publications.md data/publications/openalex.bib; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/publications.md data/publications/openalex.bib
+          git commit -m "chore: update publications from OpenAlex"
+          git push
+          if git diff --quiet HEAD~1 -- docs/publications.md; then
+            echo "Only the cache changed; no deploy needed."
+          else
+            gh workflow run docs.yml --ref "${{ github.event.repository.default_branch }}"
+          fi
