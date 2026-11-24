@@ -34,7 +34,9 @@ import json
 import os
 import re
 import sys
+import time
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -208,6 +210,26 @@ def render_entry(e: dict) -> str:
 
 
 # --------------------------------------------------------------------------- OpenAlex
+def get_json(url: str, attempts: int = 5) -> dict:
+    """GET with retries and exponential backoff for transient network/API errors."""
+    req = urllib.request.Request(url, headers={"User-Agent": "publications-updater"})
+    for i in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as exc:
+            # 4xx other than rate limiting will not get better by retrying
+            if exc.code != 429 and exc.code < 500 or i == attempts - 1:
+                raise
+        except (urllib.error.URLError, TimeoutError, ConnectionError, json.JSONDecodeError):
+            if i == attempts - 1:
+                raise
+        wait = 2 ** (i + 1)
+        print(f"OpenAlex request failed, retrying in {wait}s ({i + 1}/{attempts})", file=sys.stderr)
+        time.sleep(wait)
+    raise AssertionError("unreachable")
+
+
 def fetch_openalex(api_key: str) -> list[dict]:
     works, cursor = [], "*"
     select = "id,doi,title,publication_year,type,authorships,primary_location,biblio"
@@ -221,9 +243,7 @@ def fetch_openalex(api_key: str) -> list[dict]:
         if api_key:
             params["api_key"] = api_key
         url = "https://api.openalex.org/works?" + urllib.parse.urlencode(params)
-        req = urllib.request.Request(url, headers={"User-Agent": "publications-updater"})
-        with urllib.request.urlopen(req, timeout=60) as r:
-            data = json.load(r)
+        data = get_json(url)
         works += data["results"]
         cursor = data["meta"].get("next_cursor") if data["results"] else None
     return works

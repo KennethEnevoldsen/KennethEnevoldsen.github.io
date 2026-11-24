@@ -12,6 +12,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
@@ -35,7 +36,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/publications.md data/publications/openalex.bib
           git commit -m "chore: update publications from OpenAlex"
-          git push
+          # Retry the push, rebasing onto anything pushed to the branch since checkout.
+          for i in 1 2 3 4 5; do
+            if git push; then break; fi
+            if [ "$i" = 5 ]; then echo "push failed after $i attempts"; exit 1; fi
+            sleep $((i * 10))
+            git pull --rebase
+          done
           if git diff --quiet HEAD~1 -- docs/publications.md; then
             echo "Only the cache changed; no deploy needed."
           else
